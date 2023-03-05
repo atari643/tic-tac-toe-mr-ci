@@ -1,0 +1,17 @@
+default:
+  image: tthor/test
+
+stages:
+  - test
+
+before_script:
+  - echo 'before script'
+
+test:
+  stage: test
+  script:
+    - echo 'todo...'
+  artifacts:
+    when: on_success
+    paths:
+      - game.txt
