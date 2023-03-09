@@ -1,17 +1,15 @@
 default:
-  image: tthor/test
+  image: python:3.10
 
 stages:
   - test
 
 before_script:
   - echo 'before script'
+  # - cp game.txt game-new.txt
+  # - git cat-file -p origin/main:./game.txt > game-old.txt
 
 test:
   stage: test
   script:
-    - echo 'todo...'
-  artifacts:
-    when: on_success
-    paths:
-      - game.txt
+    - echo "TODO..."
