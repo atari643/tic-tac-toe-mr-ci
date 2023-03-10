@@ -19,7 +19,7 @@ Tout au long de cette épreuve, vous n'aurez pas besoin d'échanger entre vous '
 - Constituer un groupe de 2 participants : **O** et **X**
 > **Warning**
 > **O** et **X** seront disposés dans la salle de contrôle de manière à ne pas pouvoir communiquer oralement !
-- **O** fork ce dépôt et donne les droits `maintainer` à **X**.
+- **O** *fork* ce dépôt (en mode `private` !) et donne les droits `maintainer` à **X**.
 - **O** invite l'enseignant correcteur de son groupe en tant que `reporter`.
 > **Note**
 > Afin de pouvoir créer des *MR* à partir d'*Issues* gérées dans votre tableau de bord **GitLab**, on vous demande également de supprimer la relation avec le projet à l'origine du fork (voir /settings/general/advanced/ Remove fork relationship).
@@ -187,4 +187,4 @@ git cat-file -p origin/main:./game.txt > game-old.txt
 - [+8pt] pour mise en place des deux premières *MR* avec la *CI* associée aux deux *jobs* de validation. Montrez que vous avez effectué une relecture croisée.
 - [+6pt] pour mise en place d'une *Issue* et de la *MR* associée pour chacun des coups joués. Le graphe des commits devra refléter un workflow **GitLab** propre.
 - [+4pt] pour la séquence de fin de partie et terminaison.
-- [-2pt] par commit direct dans la branche `main` ou par *pipeline* effacé manuellement !
+- [-2pt] par commit direct dans la branche `main` ou par *pipeline* effacé manuellement, ou en cas de non respect des consignes du *fork* !
