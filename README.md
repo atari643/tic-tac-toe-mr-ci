@@ -179,7 +179,7 @@ git cat-file -p origin/main:./game.txt > game-old.txt
 ```
 
 > **Warning**
-> Vous devez impérativement utiliser l'image *Docker* `python:3.10` ! De plus, la durée du *pipeline* pour ce projet étant normalement inférieure à **10 secondes**, vous ne devriez donc pas attendre plus d'**1 minute** pour que votre *CI* s'exécute. Ainsi, l'activité des 3 runners `DOCKER_S4A`, `DOCKER_S4B` et `DOCKER_S4C` est enregistrée, et vous êtes responsable du contrôle des ressources allouées à vos tests d'intégration continue. Vous serez sanctionner dans la notation en cas d'abus !
+> Vous devez impérativement utiliser l'image *Docker* `python:3.10` ! De plus, la durée du *pipeline* pour ce projet étant normalement inférieure à **10 secondes**, vous ne devriez donc pas attendre plus d'**1 minute** pour que votre *CI* s'exécute. Ainsi, l'activité des 3 runners est enregistrée, et vous êtes responsable du contrôle des ressources allouées à vos tests d'intégration continue. Vous serez sanctionner dans la notation en cas d'abus !
 
 ## Barème indicatif
 
