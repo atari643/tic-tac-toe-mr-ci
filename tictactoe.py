@@ -12,6 +12,7 @@ def load_game(name):
 
 game_old = load_game("game-old.txt")
 print(game_old)
+print("it does work")
 game_new = load_game("game-new.txt")  # more 'X' than 'O'
 print(game_new)
 
