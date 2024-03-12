@@ -24,9 +24,4 @@ test-x:
     expire_in: 1 day
     name: "game.txt"
     when: on_success
-    path:
-      - game.txt
     untracked: true
-
-
-
