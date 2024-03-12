@@ -4,6 +4,7 @@ default:
 
 stages:
   - test
+  - test-x
 
 before_script:
   - echo 'before script'
