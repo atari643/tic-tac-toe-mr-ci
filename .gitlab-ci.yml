@@ -19,7 +19,7 @@ test:
     - python3 tictactoe.py
 
 test-x:
-  stage: test-x
+  stage: test
   script:
     - python3 test-x.py
   artifacts:
@@ -29,7 +29,7 @@ test-x:
     untracked: true
 
 test-o:
-  stage: test-o
+  stage: test
   script:
     - python3 test-o.py
   artifacts:
