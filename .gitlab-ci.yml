@@ -23,6 +23,6 @@ test-o:
   script:
     - echo "Exposing the artifact..."
   artifacts:
-    expose_as: 'game_old.txt'
+    expose_as: 'game_old'
     paths:
-      -  game_Old.txt
+      -  game_old.txt
