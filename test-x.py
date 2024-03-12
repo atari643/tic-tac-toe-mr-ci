@@ -36,5 +36,7 @@ def load_game(name):
 
 game_old = load_game("game-old.txt")
 game_new = load_game("game-new.txt")  # more 'X' than 'O'
+game_now=load_game("game.txt")
 assert valid_game(game_old)
 assert not valid_game(game_new)
+assert valid_game(game_now)

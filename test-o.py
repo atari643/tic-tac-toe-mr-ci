@@ -24,3 +24,5 @@ def load_game(name):
 game_old = load_game("game-old.txt")
 game_new = load_game("game-new.txt")  # more 'X' than 'O'
 assert one_turn(game_old, game_new)
+game_now=load_game("game.txt")
+assert one_turn(game_now)
