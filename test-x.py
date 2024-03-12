@@ -21,3 +21,10 @@ def valid_game(game):
     if o_count != x_count and o_count != x_count + 1:
         return False
     return True
+
+
+game_old = load_game("game-old.txt")
+game_new = load_game("game-new.txt")  # more 'X' than 'O'
+assert valid_game(game_old)
+assert not valid_game(game_new)
+assert one_turn(game_old, game_new)
