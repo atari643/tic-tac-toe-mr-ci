@@ -8,6 +8,8 @@ def one_turn(game_old, game_new):
         return True
     return False
 
+
+# Load game from file
 def load_game(name):
     game = [''] * 9
     file = open(name, "r")

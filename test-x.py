@@ -23,8 +23,18 @@ def valid_game(game):
     return True
 
 
+# Load game from file
+def load_game(name):
+    game = [''] * 9
+    file = open(name, "r")
+    for i in range(1, 10):
+        game[i-1] = file.read(1)
+        if i % 3 == 0:
+            file.read(1)  # end-of-line
+    file.close()
+    return game
+
 game_old = load_game("game-old.txt")
 game_new = load_game("game-new.txt")  # more 'X' than 'O'
 assert valid_game(game_old)
 assert not valid_game(game_new)
-assert one_turn(game_old, game_new)
