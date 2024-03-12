@@ -13,4 +13,20 @@ before_script:
 test:
   stage: test
   script:
-    - echo "TODO..."
+    - echo Start script
+    - python3 tictactoe.py
+
+test-x:
+  stage: test-x
+  script:
+    - python3 test-x.py
+  artifacts:
+    expire_in: 1 day
+    name: "game.txt"
+    when: on_success
+    path:
+      - game.txt
+    untracked: true
+
+
+
