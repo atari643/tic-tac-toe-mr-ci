@@ -1,5 +1,6 @@
 # Check if the game is valid
 def valid_game(game):
+    print("well it runs")
     # 1. check if the game is a list of 9 characters
     if not isinstance(game, list):
         return False
