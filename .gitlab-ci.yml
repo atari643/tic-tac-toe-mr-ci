@@ -26,4 +26,3 @@ test-x:
     name: "game.txt"
     when: on_success
     untracked: true
-
