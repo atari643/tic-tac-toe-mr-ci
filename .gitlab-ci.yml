@@ -10,7 +10,7 @@ stages:
 before_script:
   - echo 'before script'
   - cp game.txt game-new.txt
-  - git cat-file -p origin/main:./game.txt > game-old.txt
+  - git cat-file -p origin/main:./game.txt > game_old.txt
 
 test:
   stage: test
@@ -25,4 +25,4 @@ test-o:
   artifacts:
     expose_as: 'game_old.txt'
     paths:
-      -  game-old.txt
+      -  game_Old.txt
