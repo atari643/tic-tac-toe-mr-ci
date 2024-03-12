@@ -5,6 +5,7 @@ default:
 stages:
   - test
   - test-x
+  - test-o
 
 before_script:
   - echo 'before script'
@@ -21,6 +22,16 @@ test-x:
   stage: test-x
   script:
     - python3 test-x.py
+  artifacts:
+    expire_in: 1 day
+    name: "game.txt"
+    when: on_success
+    untracked: true
+
+test-o:
+  stage: test-o
+  script:
+    - python3 test-o.py
   artifacts:
     expire_in: 1 day
     name: "game.txt"
