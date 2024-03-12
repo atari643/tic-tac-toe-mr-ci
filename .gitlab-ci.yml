@@ -25,4 +25,5 @@ test-o:
   artifacts:
     expose_as: 'game_old'
     paths:
-      -  game_old.txt
+      -  game_old.txt 
+      
