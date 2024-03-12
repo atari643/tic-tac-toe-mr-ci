@@ -4,13 +4,25 @@ default:
 
 stages:
   - test
+  - test-o
+  - test-x
 
 before_script:
   - echo 'before script'
-  # - cp game.txt game-new.txt
-  # - git cat-file -p origin/main:./game.txt > game-old.txt
+  - cp game.txt game-new.txt
+  - git cat-file -p origin/main:./game.txt > game-old.txt
 
 test:
   stage: test
   script:
-    - echo "TODO..."
+    - echo Start script
+    - python3 tictactoe.py
+
+test-o:
+  stage: test-o
+  script:
+    - echo "Exposing the artifact..."
+  artifacts:
+    expose_as: 'game-old.txt'
+    paths:
+      - game-old.txt
