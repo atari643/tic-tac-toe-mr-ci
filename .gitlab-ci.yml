@@ -4,13 +4,12 @@ default:
 
 stages:
   - test
-  - test-o
   - test-x
 
 before_script:
   - echo 'before script'
-  - cp game.txt game-new.txt
-  - git cat-file -p origin/main:./game.txt > game_old.txt
+  # - cp game.txt game-new.txt
+  # - git cat-file -p origin/main:./game.txt > game-old.txt
 
 test:
   stage: test
@@ -18,12 +17,12 @@ test:
     - echo Start script
     - python3 tictactoe.py
 
-test-o:
-  stage: test-o
+test-x:
+  stage: test-x
   script:
-    - echo "Exposing the artifact..."
+    - python3 test-x.py
   artifacts:
-    expose_as: 'game_old'
-    paths:
-      -  game_old.txt 
-      
+    expire_in: 1 day
+    name: "game.txt"
+    when: on_success
+    untracked: true
